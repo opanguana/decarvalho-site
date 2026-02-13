@@ -32,13 +32,13 @@ export default function HomePage() {
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/track-record"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-base font-semibold text-zinc-900 hover:bg-zinc-100"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-base font-semibold text-zinc-900 transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
               >
                 Our companies
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex h-12 items-center justify-center rounded-full border border-white/45 bg-white/10 px-6 text-base font-medium text-white backdrop-blur-sm hover:bg-white/15"
+                className="inline-flex h-12 items-center justify-center rounded-full border border-white/45 bg-white/10 px-6 text-base font-medium text-white backdrop-blur-sm transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
               >
                 Governance
               </Link>
