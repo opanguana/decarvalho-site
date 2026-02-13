@@ -17,7 +17,7 @@ export default function Header() {
   const donateHref = primaryByLabel.get("Contact") ?? "/contact";
   const askHelpHref = donateHref;
 
-  const desktopNavLinkClass = "px-3 py-1.5 text-sm text-white/95 hover:text-white";
+  const desktopNavLinkClass = "px-3 py-1.5 text-sm text-white/95 transition-opacity duration-200 hover:text-white hover:opacity-90";
   const mobileNavLinkClass = "block rounded-lg px-3 py-2 text-sm text-white/95 hover:bg-white/10 hover:text-white";
 
   const renderDesktopNav = () => (
@@ -44,19 +44,18 @@ export default function Header() {
           ))}
         </div>
       </details>
-{/* 
       <Link href={governanceHref} className={desktopNavLinkClass}>
         Governance
       </Link>
       <Link href={trackRecordHref} className={desktopNavLinkClass}>
         Track Record
-      </Link> */}
+      </Link>
       <Link href={eventsHref} className={desktopNavLinkClass}>
         Events <span aria-hidden="true">⌄</span>
       </Link>
-      {/* <Link href={donateHref} className={desktopNavLinkClass}>
+      <Link href={donateHref} className={desktopNavLinkClass}>
         Donate <span aria-hidden="true">⌄</span>
-      </Link> */}
+      </Link>
     </nav>
   );
 
