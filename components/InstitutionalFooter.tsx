@@ -3,10 +3,7 @@ import footerContent from "@/content/footer.json";
 
 export default function InstitutionalFooter() {
   return (
-    <footer
-      className="w-full bg-[radial-gradient(80%_120%_at_88%_50%,rgba(92,58,30,0.28)_0%,rgba(58,37,20,0.16)_38%,rgba(26,18,12,0)_72%),linear-gradient(105deg,#062C26_0%,#0C3F34_46%,#062C26_100%)] text-[#F5F7F6]"
-      aria-label="Site footer"
-    >
+    <footer className="w-full bg-[#F2D22E] text-black" aria-label="Site footer">
       <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 py-12 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
         <div className="shrink-0">
           <p className="text-5xl font-black leading-[0.88] tracking-tight">{footerContent.brand.line1}</p>
@@ -19,14 +16,14 @@ export default function InstitutionalFooter() {
             <a
               href={footerContent.actions.email.href}
               aria-label={`Send email to ${footerContent.actions.email.href.replace("mailto:", "")}`}
-              className="inline-flex min-h-11 items-center justify-center border border-white/25 bg-[#F5F7F6] px-5 text-sm font-semibold text-[#062C26] transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
             >
               {footerContent.actions.email.label}
             </a>
             <a
               href={footerContent.actions.phone.href}
               aria-label={`Call ${footerContent.actions.phone.href.replace("tel:", "")}`}
-              className="inline-flex min-h-11 items-center justify-center border border-white/25 bg-white/10 px-5 text-sm font-semibold text-[#F5F7F6] transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
             >
               {footerContent.actions.phone.label}
             </a>
@@ -42,7 +39,7 @@ export default function InstitutionalFooter() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="inline-flex min-h-11 items-center text-sm text-[#F5F7F6] transition-opacity duration-200 hover:underline hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+                      className="inline-flex min-h-11 items-center text-sm transition-opacity duration-200 hover:underline hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
                     >
                       {item.label}
                     </Link>
