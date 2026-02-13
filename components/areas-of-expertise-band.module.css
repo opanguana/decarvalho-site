@@ -1,0 +1,16 @@
+.label {
+  font-size: clamp(1.1rem, 1.35vw, 1.5rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.title {
+  font-size: clamp(3rem, 6.6vw, 6.2rem);
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+}
+
+.itemLink {
+  font-size: clamp(1.8rem, 2.2vw, 3rem);
+  line-height: 1.15;
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AreasOfExpertiseSection from "@/components/AreasOfExpertiseSection";
+import AreasOfExpertiseBand from "@/components/AreasOfExpertiseBand";
 import { getPages } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
@@ -46,7 +46,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <AreasOfExpertiseSection />
+      <AreasOfExpertiseBand />
     </>
   );
 }
