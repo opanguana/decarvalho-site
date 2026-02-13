@@ -40,13 +40,16 @@ export default function AreasOfExpertiseSection() {
   return (
     <section
       aria-labelledby="areas-of-expertise-title"
-      className={`bg-zinc-50 text-zinc-900 ${styles.waveThemeBlue}`}
+      className={`text-[#F5F7F6] ${styles.waveThemeBlue} ${styles.heroSurface}`}
     >
       <div className={styles.waveStaticTop} aria-hidden="true" />
 
       <div className="mx-auto w-full max-w-[1400px] px-4 py-12 sm:px-8 sm:py-16">
-        <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-600">Mozambique</h3>
-        <h2 id="areas-of-expertise-title" className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[rgba(255,255,255,0.75)]">Mozambique</h3>
+        <h2
+          id="areas-of-expertise-title"
+          className="mt-3 text-3xl font-semibold tracking-tight text-[#F5F7F6] sm:text-4xl"
+        >
           Areas of Expertise
         </h2>
 
@@ -55,7 +58,7 @@ export default function AreasOfExpertiseSection() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="inline-flex rounded-md py-1 text-base text-zinc-700 underline-offset-4 transition hover:text-zinc-900 hover:underline focus-visible:underline"
+                className="inline-flex rounded-md py-1 text-base text-[#F5F7F6] underline-offset-4 transition-opacity hover:opacity-85 hover:underline focus-visible:underline focus-visible:ring-2 focus-visible:ring-[rgba(255,255,255,0.25)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
               >
                 {item.label}
               </Link>

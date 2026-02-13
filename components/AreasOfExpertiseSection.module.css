@@ -1,5 +1,12 @@
 .waveThemeBlue {
-  --wave-color: #2f68cc;
+  --wave-color: #114a3b;
+}
+
+.heroSurface {
+  background-color: #062c26;
+  background-image:
+    radial-gradient(60% 120% at 88% 50%, rgba(92, 58, 30, 0.32) 0%, rgba(58, 37, 20, 0.2) 38%, rgba(26, 18, 12, 0) 70%),
+    linear-gradient(105deg, #062c26 0%, #0c3f34 44%, #114a3b 70%, #062c26 100%);
 }
 
 .waveStaticTop,

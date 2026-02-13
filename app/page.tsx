@@ -24,9 +24,9 @@ export default function HomePage() {
         <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1400px] items-end px-4 pb-14 sm:px-8 sm:pb-16 md:pb-20">
           <div className="max-w-4xl">
             <h1 className="text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-7xl">
-              <span className="block">Support global</span>
-              <span className="block">cancer care and</span>
-              <span className="block">give hope a chance</span>
+              <span className="block">Align governance</span>
+              <span className="block">across brands</span>
+              <span className="block">for real outcomes</span>
             </h1>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -34,13 +34,13 @@ export default function HomePage() {
                 href="/track-record"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-base font-semibold text-zinc-900 hover:bg-zinc-100"
               >
-                Upcoming events
+                Our companies
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-white/45 bg-white/10 px-6 text-base font-medium text-white backdrop-blur-sm hover:bg-white/15"
               >
-                Donate now
+                Governance
               </Link>
             </div>
           </div>
