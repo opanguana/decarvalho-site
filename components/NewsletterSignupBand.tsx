@@ -16,7 +16,7 @@ export default function NewsletterSignupBand() {
             </p>
           </div>
 
-          <form action="#" className="grid gap-4" method="post">
+          <form action="#" className="grid gap-4" method="post" aria-label="Newsletter sign-up form">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <label htmlFor="newsletter-first-name" className="sr-only">
@@ -27,7 +27,7 @@ export default function NewsletterSignupBand() {
                   name="firstName"
                   type="text"
                   placeholder="FIRST NAME"
-                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
               <div>
@@ -39,7 +39,7 @@ export default function NewsletterSignupBand() {
                   name="lastName"
                   type="text"
                   placeholder="LAST NAME"
-                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
             </div>
@@ -54,12 +54,12 @@ export default function NewsletterSignupBand() {
                   name="email"
                   type="email"
                   placeholder="EMAIL"
-                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
               <button
                 type="submit"
-                className="h-12 min-w-[132px] bg-[#0C0C0C] px-6 text-sm font-extrabold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-[#1A1A1A]"
+                className="h-12 min-w-[132px] bg-[#0C0C0C] px-6 text-sm font-extrabold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-[#1A1A1A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
               >
                 Submit
               </button>
