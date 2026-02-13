@@ -36,6 +36,12 @@ npm run test:smoke
 npm run verify
 ```
 
+### Dependency lockfile policy
+
+- Commit `package-lock.json` for reproducible CI/CD installs.
+- Use `npm ci` in CI when lockfile is present.
+- When dependencies change, run `npm install` locally and commit updated lockfile.
+
 ### Build for production
 
 ```bash
@@ -58,6 +64,7 @@ git checkout -b chore/short-description
 2. Push branch and open a PR.
 3. Require CI green status before merge.
 4. Merge with squash or rebase (team standard), then delete merged branch.
+5. Secret scanning runs in CI on pull requests and `main` pushes.
 
 ### Release tags
 
