@@ -42,7 +42,7 @@ const rightColumnItems = [
 export default function AreasOfExpertiseBand() {
   return (
     <section aria-labelledby="areas-of-expertise-title" className="w-full bg-[#16392f] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-8 lg:px-8">
+      <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-8">
         {/* <h3 className={`${styles.label} font-extrabold uppercase text-white`}>MOZAMBIQUE</h3> */}
         <h2 id="areas-of-expertise-title" className={`${styles.title} mt-4 font-black uppercase text-white`}>
           AREAS OF EXPERTISE
