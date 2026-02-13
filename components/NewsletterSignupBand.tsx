@@ -3,7 +3,7 @@ import styles from "@/components/NewsletterSignupBand.module.css";
 export default function NewsletterSignupBand() {
   return (
     <section aria-labelledby="newsletter-title" className="w-full bg-[#8EC5E3] text-[#0E4E86]">
-      <div className="max-w-7xl mx-auto px-6 py-14 lg:px-8 lg:py-16">
+      <div className="mx-auto w-full max-w-[1400px] px-4 py-14 sm:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end">
           <div>
             <h2 id="newsletter-title" className={`${styles.heading} font-black uppercase`}>
