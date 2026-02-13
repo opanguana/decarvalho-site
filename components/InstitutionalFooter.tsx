@@ -4,7 +4,7 @@ import footerContent from "@/content/footer.json";
 export default function InstitutionalFooter() {
   return (
     <footer className="w-full bg-[#F2D22E] text-black" aria-label="Site footer">
-      <div className="max-w-7xl mx-auto flex w-full flex-col gap-10 px-6 py-12 lg:flex-row lg:items-center lg:justify-between lg:gap-14 lg:px-8">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 py-12 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
         <div className="shrink-0">
           <p className="text-5xl font-black leading-[0.88] tracking-tight">{footerContent.brand.line1}</p>
           <p className="text-5xl font-black leading-[0.88] tracking-tight">{footerContent.brand.line2}</p>
