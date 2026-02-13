@@ -17,10 +17,8 @@ export default function Header() {
   const donateHref = primaryByLabel.get("Contact") ?? "/contact";
   const askHelpHref = donateHref;
 
-  const desktopNavLinkClass =
-    "px-3 py-1.5 text-sm text-white/95 transition-opacity duration-200 hover:text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]";
-  const mobileNavLinkClass =
-    "block rounded-lg px-3 py-2 text-sm text-white/95 transition-opacity duration-200 hover:bg-white/10 hover:text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]";
+  const desktopNavLinkClass = "px-3 py-1.5 text-sm text-white/95 transition-opacity duration-200 hover:text-white hover:opacity-90";
+  const mobileNavLinkClass = "block rounded-lg px-3 py-2 text-sm text-white/95 hover:bg-white/10 hover:text-white";
 
   const renderDesktopNav = () => (
     <nav
@@ -63,15 +61,12 @@ export default function Header() {
 
   const renderDesktopActions = () => (
     <div className="pointer-events-auto hidden items-center gap-6 md:flex">
-      <Link
-        href={askHelpHref}
-        className="text-sm text-white/95 transition-opacity duration-200 hover:text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
-      >
+      <Link href={askHelpHref} className="text-sm text-white/95 hover:text-white">
         Ask for Help
       </Link>
       <Link
         href={donateHref}
-        className="inline-flex h-12 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-zinc-900 transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+        className="inline-flex h-12 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-zinc-900 hover:bg-zinc-100"
       >
         Contact us
       </Link>
