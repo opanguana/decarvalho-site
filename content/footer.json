@@ -1,0 +1,49 @@
+{
+  "brand": {
+    "line1": "De",
+    "line2": "Carvalho"
+  },
+  "address": "1615 Example Street, City, Country",
+  "actions": {
+    "email": {
+      "label": "Email",
+      "href": "mailto:info@decarvalho.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "href": "tel:+258000000000"
+    }
+  },
+  "groups": [
+    {
+      "heading": "FOLLOW US",
+      "links": [
+        { "label": "LinkedIn", "href": "#" },
+        { "label": "X", "href": "#" },
+        { "label": "YouTube", "href": "#" },
+        { "label": "Instagram", "href": "#" },
+        { "label": "Facebook", "href": "#" }
+      ]
+    },
+    {
+      "heading": "EXPLORE",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Our Companies", "href": "/our-companies" },
+        { "label": "Governance", "href": "/governance" },
+        { "label": "Track Record", "href": "/track-record" },
+        { "label": "Contact", "href": "/contact" },
+        { "label": "News", "href": "#" }
+      ]
+    },
+    {
+      "heading": "LEGAL & MORE",
+      "links": [
+        { "label": "Privacy", "href": "#" },
+        { "label": "Terms", "href": "#" },
+        { "label": "Cookies", "href": "#" },
+        { "label": "Sitemap", "href": "#" }
+      ]
+    }
+  ]
+}
