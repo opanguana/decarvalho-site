@@ -17,6 +17,79 @@ npm run dev
 
 Open http://localhost:3000
 
+## Dev workflow
+
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+### Quality checks
+
+```bash
+# lint + types
+npm run test:smoke
+
+# full local verification
+npm run verify
+```
+
+### Build for production
+
+```bash
+npm run build
+npm run start
+```
+
+### Branch and PR flow
+
+```bash
+# update from main branch
+git checkout main
+git pull --ff-only
+
+# create feature/chore branch
+git checkout -b chore/short-description
+```
+
+1. Make small, focused commits using Conventional Commit messages.
+2. Push branch and open a PR.
+3. Require CI green status before merge.
+4. Merge with squash or rebase (team standard), then delete merged branch.
+
+### Release tags
+
+```bash
+# after merging release-ready changes
+git checkout main
+git pull --ff-only
+git tag -a v1.0.0 -m "release: v1.0.0"
+git push origin v1.0.0
+```
+
+### Rollback
+
+```bash
+# rollback one bad commit in shared history
+git revert <commit-sha>
+git push origin <branch>
+```
+
+```bash
+# rollback to previous release state
+git checkout <branch>
+git revert <first-bad-commit>^..<last-bad-commit>
+git push origin <branch>
+```
+
+```bash
+# remove mistaken local tag and recreate correctly
+git tag -d v1.0.0
+git tag -a v1.0.0 -m "release: v1.0.0"
+```
+
 ## Configure placeholders
 
 Edit `/content/site.json`:
