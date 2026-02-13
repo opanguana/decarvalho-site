@@ -15,13 +15,15 @@ export default function InstitutionalFooter() {
           <div className="mt-4 flex gap-3">
             <a
               href={footerContent.actions.email.href}
-              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800"
+              aria-label={`Send email to ${footerContent.actions.email.href.replace("mailto:", "")}`}
+              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
             >
               {footerContent.actions.email.label}
             </a>
             <a
               href={footerContent.actions.phone.href}
-              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800"
+              aria-label={`Call ${footerContent.actions.phone.href.replace("tel:", "")}`}
+              className="inline-flex min-h-11 items-center justify-center border border-black bg-black px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
             >
               {footerContent.actions.phone.label}
             </a>
@@ -30,14 +32,14 @@ export default function InstitutionalFooter() {
 
         <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:max-w-3xl lg:grid-cols-3 lg:gap-10">
           {footerContent.groups.map((group) => (
-            <nav key={group.heading} aria-label={group.heading.toLowerCase()}>
+            <nav key={group.heading} aria-label={group.heading}>
               <h2 className="text-xs font-bold uppercase tracking-wider">{group.heading}</h2>
               <ul className="mt-3 space-y-2">
                 {group.links.map((item) => (
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="text-sm transition-opacity duration-200 hover:underline hover:opacity-80"
+                      className="inline-flex min-h-11 items-center text-sm transition-opacity duration-200 hover:underline hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#F2D22E]"
                     >
                       {item.label}
                     </Link>
