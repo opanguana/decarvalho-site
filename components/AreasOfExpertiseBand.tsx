@@ -41,7 +41,7 @@ const rightColumnItems = [
 
 export default function AreasOfExpertiseBand() {
   return (
-    <section aria-labelledby="areas-of-expertise-title" className="w-full bg-[#16392f] text-white">
+    <section aria-labelledby="areas-of-expertise-title" className="w-full bg-[#062C26] text-white">
       <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-8">
         {/* <h3 className={`${styles.label} font-extrabold uppercase text-white`}>MOZAMBIQUE</h3> */}
         <h2 id="areas-of-expertise-title" className={`${styles.title} mt-4 font-black uppercase text-white`}>
@@ -54,7 +54,7 @@ export default function AreasOfExpertiseBand() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`${styles.itemLink} inline-flex font-bold text-white transition-opacity hover:opacity-85 focus:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A5691]`}
+                  className={`${styles.itemLink} inline-flex font-bold text-white transition-opacity hover:opacity-85 focus:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]`}
                 >
                   {item.label}
                 </Link>
@@ -67,7 +67,7 @@ export default function AreasOfExpertiseBand() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`${styles.itemLink} inline-flex font-bold text-white transition-opacity hover:opacity-85 focus:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A5691]`}
+                  className={`${styles.itemLink} inline-flex font-bold text-white transition-opacity hover:opacity-85 focus:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]`}
                 >
                   {item.label}
                 </Link>
