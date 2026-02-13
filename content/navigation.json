@@ -1,0 +1,14 @@
+{
+  "primary": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Our Companies", "href": "/our-companies" },
+    { "label": "Governance", "href": "/governance" },
+    { "label": "Track Record", "href": "/track-record" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "companies": [
+    { "label": "Amparo", "href": "/amparo" },
+    { "label": "Cuidar+", "href": "/cuidar" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "amparo": {
+    "name": "Amparo",
+    "shortDescription": "Program implementation and operational support for mission-driven organizations.",
+    "audience": "NGOs, donors, consortia, and implementation partners",
+    "whenToChoose": [
+      "You need clear delivery frameworks for programs",
+      "You require field-to-reporting operational support",
+      "You want dependable execution without hype"
+    ],
+    "themes": ["Implementation", "Operations", "Accountability"]
+  },
+  "cuidar": {
+    "name": "Cuidar+",
+    "shortDescription": "People-centered services designed to improve access, continuity, and quality of care.",
+    "audience": "Health and social programs, community services, and partners",
+    "whenToChoose": [
+      "You need service models that prioritize people and continuity",
+      "You want practical process design and enablement",
+      "You require measurable, transparent delivery"
+    ],
+    "themes": ["Care models", "Service design", "Enablement"]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "orgName": "DeCarvalho",
+  "orgLegalName": "DeCarvalho (Holding Company)",
+  "tagline": "A holding group supporting mission-driven work through credible delivery and operational rigor.",
+  "description": "DeCarvalho is a holding company with two sub-brands—Amparo and Cuidar+—serving NGOs, donors, and implementation partners with clear, accountable delivery.",
+  "baseUrl": "https://example.com",
+  "defaultOgImage": "/og-default.png",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/placeholder",
+    "x": "https://x.com/placeholder"
+  },
+  "contact": {
+    "email": "info@example.com",
+    "phone": "+258 00 000 0000",
+    "address": "Maputo, Mozambique"
+  },
+  "hubspot": {
+    "portalId": "0000000",
+    "formGuid": "00000000-0000-0000-0000-000000000000"
+  }
+}

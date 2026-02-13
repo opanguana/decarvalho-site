@@ -1,0 +1,196 @@
+{
+  "home": {
+    "title": "DeCarvalho",
+    "description": "A holding group with two focused sub-brands serving mission-driven work with credibility and clarity.",
+    "hero": {
+      "eyebrow": "Holding Company",
+      "headline": "Build credibility through clear delivery.",
+      "subheadline": "DeCarvalho connects strategy, governance, and implementation through two focused sub-brands: Amparo and Cuidar+.",
+      "primaryCta": { "label": "Explore Our Companies", "href": "/our-companies" },
+      "secondaryCta": { "label": "Contact", "href": "/contact" }
+    },
+    "sections": [
+      {
+        "title": "What we stand for",
+        "body": "We prioritize clarity, accountable delivery, and practical governance—without overpromising."
+      },
+      {
+        "title": "Two focused brands",
+        "body": "Amparo and Cuidar+ each serve distinct needs while sharing consistent standards and operational rigor."
+      }
+    ]
+  },
+  "about": {
+    "title": "About DeCarvalho",
+    "description": "Purpose, operating model, and how the group supports partner outcomes.",
+    "hero": {
+      "eyebrow": "About",
+      "headline": "A group built for mission-driven execution.",
+      "subheadline": "We align governance and delivery practices across our sub-brands to help partners move from intent to outcomes.",
+      "primaryCta": { "label": "Our Companies", "href": "/our-companies" },
+      "secondaryCta": { "label": "Governance", "href": "/governance" }
+    },
+    "sections": [
+      {
+        "title": "Operating model",
+        "body": "The holding provides shared standards, quality assurance, and a consistent approach to stakeholder communication."
+      },
+      {
+        "title": "How we work",
+        "body": "We start with scope clarity, then build simple delivery plans, realistic milestones, and transparent reporting."
+      }
+    ]
+  },
+  "ourCompanies": {
+    "title": "Our Companies",
+    "description": "A decision page to help you choose between Amparo and Cuidar+ based on your needs.",
+    "hero": {
+      "eyebrow": "Decision page",
+      "headline": "Choose the right path.",
+      "subheadline": "Pick the sub-brand that matches your goals, audience, and delivery requirements.",
+      "primaryCta": { "label": "Amparo", "href": "/amparo" },
+      "secondaryCta": { "label": "Cuidar+", "href": "/cuidar" }
+    }
+  },
+  "governance": {
+    "title": "Governance",
+    "description": "Lightweight governance and leadership approach designed for credibility and risk control.",
+    "hero": {
+      "eyebrow": "Governance",
+      "headline": "Credibility comes from discipline.",
+      "subheadline": "We use lightweight governance to reduce delivery risk and keep stakeholders aligned.",
+      "primaryCta": { "label": "Track Record", "href": "/track-record" },
+      "secondaryCta": { "label": "Contact", "href": "/contact" }
+    },
+    "sections": [
+      {
+        "title": "Standards",
+        "body": "Clear scope, decision logs, milestone reviews, and concise reporting—kept lean and usable."
+      },
+      {
+        "title": "Risk management",
+        "body": "We surface risks early and define mitigations that are realistic for field and operational constraints."
+      }
+    ]
+  },
+  "trackRecord": {
+    "title": "Track Record",
+    "description": "Neutral placeholders for case studies and delivery proof (no fabricated awards or clients).",
+    "hero": {
+      "eyebrow": "Track record",
+      "headline": "Evidence over claims.",
+      "subheadline": "Below are placeholders for documented work. Replace with verified, factual case studies when available.",
+      "primaryCta": { "label": "Contact", "href": "/contact" },
+      "secondaryCta": { "label": "Our Companies", "href": "/our-companies" }
+    },
+    "caseStudies": [
+      {
+        "title": "Case study placeholder 1",
+        "summary": "Short, factual summary goes here once verified.",
+        "outcomes": ["Outcome placeholder", "Outcome placeholder"]
+      },
+      {
+        "title": "Case study placeholder 2",
+        "summary": "Short, factual summary goes here once verified.",
+        "outcomes": ["Outcome placeholder", "Outcome placeholder"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contact DeCarvalho. Forms submit directly to HubSpot (no internal handlers).",
+    "hero": {
+      "eyebrow": "Contact",
+      "headline": "Start with a clear conversation.",
+      "subheadline": "Share your objectives, constraints, and timeline. We’ll respond with next steps and what we need to validate.",
+      "primaryCta": { "label": "Email us", "href": "mailto:info@example.com" },
+      "secondaryCta": { "label": "Our Companies", "href": "/our-companies" }
+    }
+  },
+  "amparoHome": {
+    "title": "Amparo",
+    "description": "Program implementation and operational support for partners delivering mission-driven work.",
+    "hero": {
+      "eyebrow": "Amparo",
+      "headline": "Operational delivery for mission-driven work.",
+      "subheadline": "Amparo supports partners with practical implementation, predictable operations, and clear reporting.",
+      "primaryCta": { "label": "What we do", "href": "/amparo/what-we-do" },
+      "secondaryCta": { "label": "Contact", "href": "/contact" }
+    }
+  },
+  "amparoWhat": {
+    "title": "Amparo — What we do",
+    "description": "Services focused on implementation, operational enablement, and delivery clarity.",
+    "sections": [
+      { "title": "Implementation support", "body": "Delivery planning, execution support, and operational coordination tailored to context." },
+      { "title": "Reporting & accountability", "body": "Simple reporting structures that keep stakeholders aligned and decisions documented." }
+    ]
+  },
+  "amparoWho": {
+    "title": "Amparo — Who it’s for",
+    "description": "Ideal audiences and engagement contexts.",
+    "sections": [
+      { "title": "NGOs & implementers", "body": "Teams that need reliable operational support and delivery structure." },
+      { "title": "Donors & consortia", "body": "Stakeholders seeking transparent progress tracking and risk control." }
+    ]
+  },
+  "amparoHow": {
+    "title": "Amparo — How we work",
+    "description": "A practical, low-friction delivery approach.",
+    "sections": [
+      { "title": "Clarify", "body": "Define scope, constraints, and responsibilities in plain language." },
+      { "title": "Deliver", "body": "Execute with simple plans, realistic milestones, and ongoing coordination." },
+      { "title": "Prove", "body": "Document decisions, progress, and lessons learned." }
+    ]
+  },
+  "amparoProof": {
+    "title": "Amparo — Proof",
+    "description": "Placeholder proof points (replace with verified case studies and references).",
+    "sections": [
+      { "title": "Case study placeholders", "body": "Add verified case studies with factual outcomes. Avoid unverified claims." }
+    ]
+  },
+  "cuidarHome": {
+    "title": "Cuidar+",
+    "description": "People-centered services focused on access, continuity, and quality of care.",
+    "hero": {
+      "eyebrow": "Cuidar+",
+      "headline": "Services designed around people.",
+      "subheadline": "Cuidar+ helps partners design and deliver care-oriented services with practical processes and measurable improvements.",
+      "primaryCta": { "label": "What we do", "href": "/cuidar/what-we-do" },
+      "secondaryCta": { "label": "Contact", "href": "/contact" }
+    }
+  },
+  "cuidarWhat": {
+    "title": "Cuidar+ — What we do",
+    "description": "Service design, enablement, and delivery support for care-oriented programs.",
+    "sections": [
+      { "title": "Service model design", "body": "Define service flows, roles, and quality measures that fit real constraints." },
+      { "title": "Enablement", "body": "Training, playbooks, and operational routines to sustain service quality." }
+    ]
+  },
+  "cuidarWho": {
+    "title": "Cuidar+ — Who it’s for",
+    "description": "Partners delivering health and social services.",
+    "sections": [
+      { "title": "Community services", "body": "Programs that need practical, people-centered service design." },
+      { "title": "Health & social partners", "body": "Teams looking to strengthen continuity and quality without adding complexity." }
+    ]
+  },
+  "cuidarHow": {
+    "title": "Cuidar+ — How we work",
+    "description": "A pragmatic approach from discovery to operationalization.",
+    "sections": [
+      { "title": "Discover", "body": "Understand users, constraints, and what must not fail." },
+      { "title": "Design", "body": "Create simple service flows and measurable quality checks." },
+      { "title": "Operationalize", "body": "Embed routines, enable teams, and track outcomes responsibly." }
+    ]
+  },
+  "cuidarProof": {
+    "title": "Cuidar+ — Proof",
+    "description": "Placeholder proof points (replace with verified case studies and references).",
+    "sections": [
+      { "title": "Case study placeholders", "body": "Add verified case studies with factual outcomes. Avoid unverified claims." }
+    ]
+  }
+}
