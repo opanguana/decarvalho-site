@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getNavigation, getSite } from "@/lib/content";
@@ -9,6 +10,7 @@ export default function Header() {
   const site = getSite();
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [showScrolledNav, setShowScrolledNav] = useState(false);
   const primaryByLabel = new Map(nav.primary.map((item) => [item.label, item.href]));
   const aboutHref = primaryByLabel.get("About") ?? "/about";
   const governanceHref = primaryByLabel.get("Governance") ?? "/governance";
@@ -125,9 +127,31 @@ export default function Header() {
     </details>
   );
 
+  useEffect(() => {
+    if (!isHome) return;
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setShowScrolledNav(window.scrollY > 56);
+        ticking = false;
+      });
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
+
   if (isHome) {
     return (
-      <header className="pointer-events-none absolute inset-x-0 top-0 z-30">
+      <header
+        className={`pointer-events-none inset-x-0 top-0 transition-all duration-300 ${
+          showScrolledNav ? "fixed z-40 bg-transparent" : "absolute z-30"
+        }`}
+      >
         <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-4 pt-4 sm:px-8 sm:pt-6">
           <Link
             href="/"
