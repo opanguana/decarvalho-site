@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import InstitutionalFooter from "@/components/InstitutionalFooter";
 import { getSite } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
@@ -40,7 +40,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         />
         <Header />
         {props.children}
-        <Footer />
+        <InstitutionalFooter />
       </body>
     </html>
   );
