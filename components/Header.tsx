@@ -1,16 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { getNavigation, getSite } from "@/lib/content";
 
 export default function Header() {
   const nav = getNavigation();
   const site = getSite();
-  const pathname = usePathname();
-  const isHome = pathname === "/";
-  const [showScrolledNav, setShowScrolledNav] = useState(false);
+  const [isNavHidden, setIsNavHidden] = useState(false);
+  const lastScrollYRef = useRef(0);
   const primaryByLabel = new Map(nav.primary.map((item) => [item.label, item.href]));
   const aboutHref = primaryByLabel.get("About") ?? "/about";
   const governanceHref = primaryByLabel.get("Governance") ?? "/governance";
@@ -128,49 +126,45 @@ export default function Header() {
   );
 
   useEffect(() => {
-    if (!isHome) return;
-
     let ticking = false;
     const onScroll = () => {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        setShowScrolledNav(window.scrollY > 56);
+        const currentY = window.scrollY;
+        const lastY = lastScrollYRef.current;
+        const delta = currentY - lastY;
+
+        // Ignore tiny jitter from touchpads/high-frequency scrolling.
+        if (Math.abs(delta) < 6) {
+          ticking = false;
+          return;
+        }
+
+        if (currentY <= 80) {
+          setIsNavHidden(false);
+        } else if (delta > 0) {
+          setIsNavHidden((prev) => (prev ? prev : true));
+        } else {
+          setIsNavHidden((prev) => (prev ? false : prev));
+        }
+
+        lastScrollYRef.current = currentY;
         ticking = false;
       });
     };
 
-    onScroll();
+    lastScrollYRef.current = window.scrollY;
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome]);
-
-  if (isHome) {
-    return (
-      <header
-        className={`pointer-events-none inset-x-0 top-0 transition-all duration-300 ${
-          showScrolledNav ? "fixed z-40 bg-transparent" : "absolute z-30"
-        }`}
-      >
-        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-4 pt-4 sm:px-8 sm:pt-6">
-          <Link
-            href="/"
-            className="pointer-events-auto rounded-sm border border-white/10 bg-[#17392f]/80 px-3 py-3 text-[15px] font-semibold leading-[1.1] tracking-tight text-white backdrop-blur-sm"
-            aria-label={`${site.orgName} home`}
-          >
-            <span className="block">De</span>
-            <span className="block">Carvalho</span>
-          </Link>
-          {renderDesktopNav()}
-          {renderDesktopActions()}
-          {renderMobileMenu()}
-        </div>
-      </header>
-    );
-  }
+  }, []);
 
   return (
-    <header className="relative inset-x-0 top-0 z-30 bg-transparent">
+    <header
+      className={`fixed inset-x-0 top-0 z-40 bg-transparent will-change-transform transition-transform duration-300 ease-out ${
+        isNavHidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-4 pt-4 sm:px-8 sm:pt-6">
         <Link
           href="/"
