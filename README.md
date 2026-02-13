@@ -22,6 +22,7 @@ Open http://localhost:3000
 ### Run locally
 
 ```bash
+nvm use
 npm install
 npm run dev
 ```
