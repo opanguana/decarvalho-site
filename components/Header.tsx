@@ -44,19 +44,19 @@ export default function Header() {
           ))}
         </div>
       </details>
-
+{/* 
       <Link href={governanceHref} className={desktopNavLinkClass}>
         Governance
       </Link>
       <Link href={trackRecordHref} className={desktopNavLinkClass}>
         Track Record
-      </Link>
+      </Link> */}
       <Link href={eventsHref} className={desktopNavLinkClass}>
         Events <span aria-hidden="true">⌄</span>
       </Link>
-      <Link href={donateHref} className={desktopNavLinkClass}>
+      {/* <Link href={donateHref} className={desktopNavLinkClass}>
         Donate <span aria-hidden="true">⌄</span>
-      </Link>
+      </Link> */}
     </nav>
   );
 
