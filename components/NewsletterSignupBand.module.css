@@ -1,0 +1,14 @@
+.heading {
+  font-size: clamp(3.4rem, 9vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.brush {
+  width: 100%;
+  max-width: 420px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 420 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 13C20 34 33 2 54 13C88 26 130 15 174 12C220 10 266 7 314 12C350 15 384 8 418 13' stroke='%23F15A40' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
