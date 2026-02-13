@@ -2,10 +2,7 @@ import styles from "@/components/NewsletterSignupBand.module.css";
 
 export default function NewsletterSignupBand() {
   return (
-    <section
-      aria-labelledby="newsletter-title"
-      className="w-full bg-[radial-gradient(78%_110%_at_88%_50%,rgba(92,58,30,0.24)_0%,rgba(58,37,20,0.12)_40%,rgba(26,18,12,0)_72%),linear-gradient(104deg,#062C26_0%,#0C3F34_48%,#062C26_100%)] text-[#F5F7F6]"
-    >
+    <section aria-labelledby="newsletter-title" className="w-full bg-[#8EC5E3] text-[#0E4E86]">
       <div className="mx-auto w-full max-w-[1400px] px-4 py-14 sm:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end">
           <div>
@@ -30,7 +27,7 @@ export default function NewsletterSignupBand() {
                   name="firstName"
                   type="text"
                   placeholder="FIRST NAME"
-                  className="h-12 w-full border border-white/25 bg-white/10 px-4 text-sm font-bold uppercase tracking-wide text-[#F5F7F6] placeholder:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
               <div>
@@ -42,7 +39,7 @@ export default function NewsletterSignupBand() {
                   name="lastName"
                   type="text"
                   placeholder="LAST NAME"
-                  className="h-12 w-full border border-white/25 bg-white/10 px-4 text-sm font-bold uppercase tracking-wide text-[#F5F7F6] placeholder:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
             </div>
@@ -57,12 +54,12 @@ export default function NewsletterSignupBand() {
                   name="email"
                   type="email"
                   placeholder="EMAIL"
-                  className="h-12 w-full border border-white/25 bg-white/10 px-4 text-sm font-bold uppercase tracking-wide text-[#F5F7F6] placeholder:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+                  className="h-12 w-full border border-[#7AA8C3] bg-[#E6E6E6] px-4 text-sm font-bold uppercase tracking-wide text-[#0E4E86] placeholder:text-[#0E4E86] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
                 />
               </div>
               <button
                 type="submit"
-                className="h-12 min-w-[132px] bg-[#F5F7F6] px-6 text-sm font-extrabold uppercase tracking-wide text-[#062C26] transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#062C26]"
+                className="h-12 min-w-[132px] bg-[#0C0C0C] px-6 text-sm font-extrabold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-[#1A1A1A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0E4E86] focus-visible:ring-offset-2 focus-visible:ring-offset-[#8EC5E3]"
               >
                 Submit
               </button>
